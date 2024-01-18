@@ -11,7 +11,7 @@ interface SiteConfig {
 export const siteConfig: SiteConfig = {
 	author: 'dose', // Site author
 	title: 'dose blog', // Site title.
-	description: 'myblog about energy programming and environments here', // Description to display in the meta tags
+	description: 'my blog about energy programming and environments here', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media

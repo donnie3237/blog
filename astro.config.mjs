@@ -8,7 +8,7 @@ import metaTags from "astro-meta-tags";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://blog-template-gray.vercel.app/',
+  site: 'https://blog.dxse.site/',
   // Write here your website url
   markdown: {
     remarkPlugins: [remarkReadingTime],
