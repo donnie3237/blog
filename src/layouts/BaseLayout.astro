@@ -6,17 +6,20 @@ import ProviderTheme from '@/components/ProviderTheme'
 import ProviderAnimations from '@/components/ProviderAnimations'
 import TwSizeIndicator from '@/components/TwSizeIndicator'
 import EditBlog from '@/components/editBlog'
-import { siteConfig } from '@/site-config'
 const { title, description, image, articleDate } = Astro.props
+<<<<<<< HEAD
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const socialImageURL = new URL(image ? image : '/open-graph.png', Astro.url).href
 const titleSeparator = '•'
 import '../styles/global.css'
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
+=======
+>>>>>>> parent of e412495 (.)
 ---
 
 <html lang='en' class='scroll-smooth'>
 	<head>
+<<<<<<< HEAD
 		<meta charset='utf-8' />
 		<meta name='viewport' content='width=device-width,initial-scale=1' />
 		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
@@ -53,6 +56,9 @@ const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
 		<!-- RSS auto-discovery -->
 		<link rel='alternate' type='application/rss+xml' title={siteConfig.title} href='/rss.xml' />
 		
+=======
+		<BaseHead title={title} description={description} ogImage={image} articleDate={articleDate} />
+>>>>>>> parent of e412495 (.)
 		<ProviderTheme />
 		<ProviderAnimations />
 	</head>
