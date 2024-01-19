@@ -7,10 +7,10 @@ import ProviderAnimations from '@/components/ProviderAnimations'
 import TwSizeIndicator from '@/components/TwSizeIndicator'
 import EditBlog from '@/components/editBlog'
 import { siteConfig } from '@/site-config'
+import Analytics from '@/components/Analytics'
 const { title, description, image, articleDate } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const socialImageURL = new URL(image ? image : '/open-graph.png', Astro.url).href
-
 const titleSeparator = '•'
 import '../styles/global.css'
 const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
@@ -53,6 +53,7 @@ const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
 
 		<!-- RSS auto-discovery -->
 		<link rel='alternate' type='application/rss+xml' title={siteConfig.title} href='/rss.xml' />
+		
 		<ProviderTheme />
 		<ProviderAnimations />
 	</head>
@@ -72,5 +73,6 @@ const siteTitle = `${title} ${titleSeparator} ${siteConfig.title}`
 				margin-left: calc(100vw - 100%); /* prevent layout shift */
 			}
 		</style>
+		<Analytics/>
 	</body>
 </html>
