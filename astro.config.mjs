@@ -27,7 +27,6 @@ export default defineConfig({
     },
     drafts: true
   }), sitemap(), tailwind(), metaTags()],
-  output: "static",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
