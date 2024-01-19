@@ -26,5 +26,5 @@ export default defineConfig({
       wrap: true
     },
     drafts: true
-  }), sitemap(), tailwind(), metaTags(), react()],
+  }), sitemap(), tailwind(), metaTags()],
 });
