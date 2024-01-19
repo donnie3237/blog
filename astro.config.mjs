@@ -4,9 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
 import metaTags from "astro-meta-tags";
-import vercel from "@astrojs/vercel/static";
-
-import react from "@astrojs/react";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,6 +26,7 @@ export default defineConfig({
     },
     drafts: true
   }), sitemap(), tailwind(), metaTags(), react()],
+  output: 'server',
   adapter: vercel({
     webAnalytics: {
       enabled: true
