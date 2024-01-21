@@ -9,7 +9,7 @@ import EditBlog from '@/components/editBlog'
 import { siteConfig } from '@/site-config'
 const { title, description, image, articleDate } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
-const socialImageURL = new URL(image ? image : '/open-graph.png', Astro.url).href
+const socialImageURL = new URL(image ? image : '/og.jpg', Astro.url).href
 
 const titleSeparator = '•'
 import '../styles/global.css'
