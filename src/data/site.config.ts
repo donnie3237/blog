@@ -10,8 +10,8 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
 	author: 'dose', // Site author
-	title: 'dose blog', // Site title.
-	description: 'my blog about energy programming and environments here', // Description to display in the meta tags
+	title: 'Dose', // Site title.
+	description: 'DXSE Blog is a website that covers topics such as programming, energy, and environment. It features articles written by Dose creater of Dose3 and many more, a passionate coder and blogger who shares his insights and opinions on various technologies and issues. Whether you are interested in learning about server API, wireless energy, nuclear fusion, or the end of humanity, DXSE Blog has something for you. Visit DXSE Blog today and discover a world of knowledge and inspiration.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
