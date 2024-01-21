@@ -18,6 +18,7 @@ export default defineConfig({
       wrap: true
     }
   },
+  output:'server',
   integrations: [mdx({
     syntaxHighlight: 'shiki',
     shikiConfig: {
