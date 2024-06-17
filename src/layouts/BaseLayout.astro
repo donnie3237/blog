@@ -10,7 +10,7 @@ import { siteConfig } from '@/site-config'
 const { title, description, image, articleDate } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const socialImageURL = new URL(image ? image : '/og.jpg', Astro.url).href
-
+import Search from "astro-pagefind/components/Search";
 const titleSeparator = '•'
 import '../styles/global.css'
 const siteTitle = `${title} | ${siteConfig.title}`
@@ -58,6 +58,9 @@ const siteTitle = `${title} | ${siteConfig.title}`
 	</head>
 
 	<body class='bg-white text-stone-950 dark:bg-[#0a0910] dark:text-white'>
+
+
+<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 		<main
 			class='px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-6xl grid gap-12 mt-4 overflow-hidden md:overflow-visible'
 		>

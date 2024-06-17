@@ -3,9 +3,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
-
 import metaTags from "astro-meta-tags";
-
+import pagefind from "astro-pagefind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.dxse.site/',
@@ -18,6 +17,9 @@ export default defineConfig({
       wrap: true
     }
   },
+  build: {
+    format: "file",
+  },
   integrations: [mdx({
     syntaxHighlight: 'shiki',
     shikiConfig: {
@@ -25,5 +27,5 @@ export default defineConfig({
       wrap: true
     },
     drafts: true
-  }), sitemap(), tailwind(), metaTags()]
+  }), sitemap(), tailwind(), metaTags(),pagefind()]
 });
