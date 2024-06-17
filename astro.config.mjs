@@ -17,6 +17,7 @@ export default defineConfig({
       wrap: true
     }
   },
+  output: 'static',
   build: {
     format: "file",
   },
