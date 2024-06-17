@@ -17,10 +17,6 @@ export default defineConfig({
       wrap: true
     }
   },
-  output: 'static',
-  build: {
-    format: "file",
-  },
   integrations: [mdx({
     syntaxHighlight: 'shiki',
     shikiConfig: {
