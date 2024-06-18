@@ -5,6 +5,8 @@ import tailwind from '@astrojs/tailwind';
 import { remarkReadingTime } from './src/utils/readTime.ts';
 import metaTags from "astro-meta-tags";
 import pagefind from "astro-pagefind";
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://blog.dxse.site/',
@@ -24,5 +26,5 @@ export default defineConfig({
       wrap: true
     },
     drafts: true
-  }), sitemap(), tailwind(), metaTags(),pagefind()]
+  }), sitemap(), tailwind(), metaTags(), pagefind(), react()]
 });
