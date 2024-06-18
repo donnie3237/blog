@@ -14,12 +14,10 @@ import SearchIcon from '@/components/icons/SearchIcon'
 		aria-label='search'
 		class='h-full max-h-full w-full max-w-full border border-zinc-400 bg-white dark:bg-[#0a0910ec] shadow backdrop:backdrop-blur sm:mx-auto sm:mb-auto sm:mt-16 sm:h-max sm:max-h-[calc(100%-8rem)] sm:min-h-[15rem] sm:w-5/6 sm:max-w-[48rem] sm:rounded-md opacity-0'
 	>
-		<div class='dialog-frame flex flex-col gap-4 p-6 pt-12 sm:pt-6'>
-			<button
-				data-close-modal
-				class='ms-auto cursor-pointer rounded-full bg-black text-white px-4 py-2 dark:bg-white dark:text-black'
-				>X</button
-			>
+		<div class='dialog-frame flex flex-col gap-4 p-6 pt-12 sm:pt-4'>
+			<button data-close-modal class="btn btn-circle ms-auto btn-outline">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+			</button>
 			{
 					<div class='search-container dark:text-white'>
 						<div id='pagefind__search' />

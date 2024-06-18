@@ -9,11 +9,11 @@ const { pathname } = Astro.url
 const isActive = href === pathname || href === pathname.replace(/\/$/, '')
 ---
 
-<a
+<!-- <a
 	href={href}
 	class={cn(isActive ? 'text-opacity-100' : 'text-opacity-60', className)}
 	rel='noopener noreferrer '
 	{...props}
 >
 	<slot />
-</a>
+</a> -->
