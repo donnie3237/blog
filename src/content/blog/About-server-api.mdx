@@ -11,20 +11,36 @@ title: About server api
 
 # About server api
 
-ฉันคิดว่าการทำ เซิฟเวอร์นั้นฟังดูน่าสนุก แต่ฉันพบอะไรบางอย่างหลังจากที่เริ่มเขียนโค้ดฝั่งเซิฟเวอร์ไป และนี่คือความเห็นของฉัน
+I think creating a server sounds fun, but I’ve discovered a few things after starting to code on the server side. Here are my thoughts:
 
-## Clean architecture
+## Clean Architecture
 
-ผู้คนมีแนวคิดที่แตกต่างเกี่ยวกับเรื่องนี่ แต่การเขียนโค้ดให้ มี Linter มีแบบ MVC MVVM DDD ที่ทำให้กลับมาอ่านได้ง่าย และทำให้ดูแลต่อได้ง่ายนั้นค่อนข้างจำเป็น
+People have different opinions on this topic, but writing code with a linter and using patterns like MVC (Model-View-Controller), MVVM (Model-View-ViewModel), and DDD (Domain-Driven Design) is essential for readability and maintainability. These practices help ensure that the code can be easily understood and modified by others or even by the original developer after some time.
 
-## Algorithm
+## Algorithms
 
-อัลกอริทึมที่ดี จะทำใหโค้ดที่เขียน มีประสิทธิภาพเพิ่มขึ้น แถมยังลดความเสี่ยงจากการมีช่องโหว่ การให้ความสำคัญเรื่อง BigO เพื่อลดการทำงานของโปรแกรม หรือแม้แต่ การเปลี่ยน framework ที่มีประสิทธิภาพมากขึ้น การเข้าใจการดีไซน์ middleware ก็เป็นสิ่งสำคุญที่จะคอยตรวจจับปละ ดพิ่มความปลอดภัยของเซิฟเสอร์ได้
+A good algorithm enhances the efficiency of the written code and reduces the risk of vulnerabilities. Focusing on Big O notation to optimize the program’s performance and considering switching to more efficient frameworks can make a significant difference. Understanding middleware design is crucial for intercepting and enhancing the server’s security.
 
 ## SwaggerUI
 
-มันค่อนข้างลำบากถ้าไม่เขียนอะไรซักอยางไว้เกี่ยวกับ api และตัว  SwaggerUI ได้เข้ามาตอบโจทย์ สำหรับเช็คว่ามีพาทไหนบ้าง มี key ตัวไหนที่ต้องใช้กับอะไรบ้าง มีโมเดลข้อมูลเป็นแบบไหน ฉันคิดว่า swaggerUI ค่อนข้างตอบโจทย์จริงๆ
+It can be quite challenging if there’s no documentation about the API. SwaggerUI comes in handy for checking available paths, required keys, and data models. I believe SwaggerUI is very effective in providing a clear and comprehensive API documentation.
 
 ## Tracker
 
-ฉันได้ลองใช้ sentry เพื่อตรวจจับบัคที่เกิดขึ้นและมันจะทำการแจ้งเตือนไปยังอีเมลของฉัน มันค่อนข้างเจ๋งเลย เมื่อ สิ้นเดือน มันจะสรุปข้อมูลว่า มีพาธไหนถูกเรียกใช้ไปกี่ครั้ง และใน 1 เดือนนั้นมีอะไรเกิดขึ้นบ้าง
+I’ve tried using Sentry to detect and notify me of bugs via email. It’s pretty impressive. At the end of the month, it summarizes the data on which paths were accessed and what occurred throughout the month. This tool is invaluable for monitoring and maintaining the server’s health and performance.
+
+## Security
+
+Security is a critical aspect of server API development. Implementing proper authentication and authorization mechanisms, such as OAuth, JWT (JSON Web Tokens), and API keys, is crucial for protecting your API endpoints. Additionally, regularly updating dependencies and using security-focused libraries can help mitigate potential vulnerabilities.
+
+## Testing
+
+Automated testing is vital for ensuring the reliability of your API. Writing unit tests, integration tests, and end-to-end tests can help catch bugs early in the development process. Tools like Jest, Mocha, and Postman can be used for comprehensive testing of your server API.
+
+## Scalability
+
+Designing your server to handle increasing loads is essential for maintaining performance as your user base grows. Techniques like load balancing, horizontal scaling, and utilizing cloud services (e.g., AWS, Azure) can help distribute the workload and prevent bottlenecks.
+
+## Logging and Monitoring
+
+Proper logging and monitoring are essential for diagnosing issues and understanding the server's behavior. Tools like ELK Stack (Elasticsearch, Logstash, Kibana), Prometheus, and Grafana can provide detailed insights into the server’s performance and help with troubleshooting.
