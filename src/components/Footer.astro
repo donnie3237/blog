@@ -1,7 +1,46 @@
 ---
-const today = new Date()
+const date = new Date()
 ---
+<footer class="bg-white dark:bg-gray-900" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div class="space-y-8">
+                <img class="h-20" src="/public/logo.png" alt="Company name">
+				<p class="text-sm text-gray-600 dark:text-gray-400">&copy; {date.getFullYear()} dose, Inc. All rights reserved.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                <div class="md:grid md:grid-cols-2 md:gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">Contents</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+							<li><a href="/category/environment/1" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">environment</a></li>
+                            <li><a href="/category/energy/1" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">energy</a></li>
+                            <li><a href="/category/programming/1" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">programming</a></li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 md:mt-0">
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">Open source</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li><a href="https://dose3.dxse.site/" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Dose3</a></li>
+                            <li><a href="https://ui.dxse.site/" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">DoseUI</a></li>
+                            <li><a href="https://ai.dxse.site/" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">DoseAI</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:grid md:grid-cols-2 md:gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold leading-6 text-gray-900 dark:text-gray-100">About me</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li><a href="https://dxse.site/" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Website</a></li>
+                            <li><a href="https://x.com/Ksfdd1" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">X</a></li>
+                            <li><a href="https://github.com/donnie3237" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Github</a></li>
+                            <li><a href="mailto:paradorn3237@g,ail.com" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<footer class='flex justify-center items-center w-full px-16 h-28 border-t-2'>
-	&copy; {today.getFullYear()} Dose. All rights reserved.
+    </div>
 </footer>
